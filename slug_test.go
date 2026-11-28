@@ -8,6 +8,7 @@ func TestMake(t *testing.T) {
 		"Release notes for 2.0": "release-notes-for-20",
 		"snake_case_title":      "snake-case-title",
 		"  Trim me  ":           "trim-me",
+		"Café crème":            "cafe-creme",
 	}
 	for in, want := range cases {
 		if got := Make(in); got != want {
